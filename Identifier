@@ -1,0 +1,4 @@
+Write the 10 valid and 10 invalid identifier names ?
+Ans: Valid identifier :- { V , vp , VP , vikash , _vikash , _007 , vikash007 , _v_p , viksh_patle , vikash_patle_007 }
+     invalid  identifier :- { 007v , $v , 007 , =vp , %vp , #print , v p , 6_V , def , .vp }
+                    
