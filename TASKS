@@ -76,22 +76,62 @@ Memory address of str1 after modification: 1917874535984
 Memory address of str2 same: 1917874147360
 The memory addresses of str1 and str2 are different.
 ----------------------------------------------------------------------------
+task 5:- Create a variable x and assign it a value of 10. Use the type() function to print the type of the variable. Use the sys.getsizeof() function from the sys module to find and print the size of the variable x in bytes. Explain what you observe about the size of the variable.
 
+a=500
+print(type(a))
+import sys
+print(sys.getsizeof(a),"byte")
 
+output:-
+<class 'int'>
+28 byte
 
+-----------------------------------------------------------
+task 6:- 12. Task: Compare the size of different data types
+Create three variables:
+a = 100
+b = "hello"
+c = [1, 2, 3, 4]
+Use the sys.getsizeof() function to print the sizes of these three variables. Also, print the type of each variable using the type() function. Compare the results and explain the difference in memory usage among the variables.
 
+import sys
+a=100
+b="hello"
+c=[1,2,3,4]
+print("a:",type(a))
+print("a:",sys.getsizeof(a),"byte ")
+print("b:",type(b))
+print("b:",sys.getsizeof(b),"byte ")
+print("c:",type(c))
+print("c:",sys.getsizeof(c),"byte ")
 
+output:-
+a: <class 'int'>
+a: 28 byte
+b: <class 'str'>
+b: 46 byte
+c: <class 'list'>
+c: 88 byte
+----------------------------------------------------------------
+task:-7 13. Task: Find the size and type of a float variable
+Create a variable f = 3.14159 and use the type() function to print its type. Then, use sys.getsizeof() to find the size of the float variable. Afterward, experiment by assigning larger float numbers (like f = 1.234567890123456789) and check if the size changes. Explain why the size of floats may vary.
 
+import sys 
+f=3.14159
+print("f:",type(f))
+print("f:",sys.getsizeof(f),"byte ")
+#large flot number
+f_large=1.234567890123456789
+print("f_large:",type(f_large))
+print("f_large:",sys.getsizeof(f_large),"byte ")
 
-
-
-
-
-
-
-
-
-
+output:-
+f: <class 'float'>
+f: 24 byte
+f_large: <class 'float'>
+f_large: 24 byte
+-------------------------------------------------------------------------------
 
 
 
