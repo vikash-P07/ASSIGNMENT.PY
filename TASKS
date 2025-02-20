@@ -1,0 +1,96 @@
+task 1 :-Create two variables a and b and assign them both the value 100. Print the memory address of both variables. Compare the memory addresses of a and b and determine whether they are the same or different.
+
+a = 100
+b = 100
+print("Memory address of a:", id(a))
+print("Memory address of b:", id(b))
+if id(a) == id(b):
+    print("The memory addresses of a and b are the same.")
+else:
+    print("The memory addresses of a and b are different.")
+
+Output:-
+Memory address of a: 140712676691976
+Memory address of b: 140712676691976
+The memory addresses of a and b are the same.
+---------------------------------------------------------------
+task 2 :- Assign a string value "hello" to two variables x and y. Use the id() function to check and print their memory addresses. Explain whether the addresses are the same or different and why.
+
+x = "hello"
+y = "hello"
+print("Memory address of x:", id(x))
+print("Memory address of y:", id(y))
+if id(x) == id(y):
+    print("The memory addresses of x and y are the same.")
+else:
+    print("The memory addresses of x and y are different.")
+
+output:-
+Memory address of x: 2622064011248
+Memory address of y: 2622064011248
+The memory addresses of x and y are the same.because The memory addresses of x and y are the same due to Python's string interning, which reuses memory for identical string literals.
+--------------------------------------------------------------
+task 3:- Write a Python program that assigns a tuple (1, 2, 3) to two variables t1 and t2. Use the id() function to check if both variables point to the same memory location. Modify one of the variables by adding an element to the tuple and check whether the memory address changes.
+
+t1 = (1, 2, 3)
+t2 = (1, 2, 3)
+print("Memory address of t1:", id(t1))
+print("Memory address of t2:", id(t2))
+# Modify 
+t1 = t1 + (4,)  # This creates a new tuple (1, 2, 3, 4)
+print("Memory address of t1 after modification:", id(t1))
+print("Memory address of t2 same:", id(t2))
+if id(t1) == id(t2):
+    print("The memory addresses of t1 and t2 are the same.")
+else:
+    print("The memory addresses of t1 and t2 are different.")
+
+output:-
+Memory address of t1: 2255868946496
+Memory address of t2: 2255868946496
+Memory address of t1 after modification: 2255869214400
+Memory address of t2 same: 2255868946496
+The memory addresses of t1 and t2 are different.
+----------------------------------------------------------------------
+task 4:- Assign the value "Python" to two variables str1 and str2. Print the memory addresses of both variables using the id() function. Modify one variable by concatenating " Programming" to it. Check and print if the memory addresses have changed.
+
+str1 = "Python"
+str2 = str1  # Both variables point to the same string
+print("Memory address of str1:", id(str1))
+print("Memory address of str2:", id(str2))
+# Modify 
+str1 = str1 + " Programming"
+print("Memory address of str1 after modification:", id(str1))
+print("Memory address of str2 same:", id(str2))
+if id(str1) == id(str2):
+    print("The memory addresses of str1 and str2 are the same.")
+else:
+    print("The memory addresses of str1 and str2 are different.")
+
+output:-
+Memory address of str1: 1917874147360
+Memory address of str2: 1917874147360
+Memory address of str1 after modification: 1917874535984
+Memory address of str2 same: 1917874147360
+The memory addresses of str1 and str2 are different.
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
