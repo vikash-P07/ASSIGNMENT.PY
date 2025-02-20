@@ -1,3 +1,5 @@
+date:-20/02/25
+
 task 1 :-Create two variables a and b and assign them both the value 100. Print the memory address of both variables. Compare the memory addresses of a and b and determine whether they are the same or different.
 
 a = 100
