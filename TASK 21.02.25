@@ -1,0 +1,110 @@
+1.DECIMAL NUMBER
+-------------
+TASK 1:- Convert the decimal number 123 into binary, octal, and hexadecimal formats using Python.
+decimal_number = 123
+print(bin(decimal_number))
+print(oct(decimal_number))
+print(hex(decimal_number))
+
+output:-
+0b1111011
+0o173
+0x7b
+-----------------------------------------------------------------------------------------------------
+2.BINARI NUMBER
+--------------
+TASK 2:- Declare a binary number 0b1101 in Python and convert it into its decimal equivalent.
+
+binary_number = 0b1101
+print(int(binary_number))
+
+output:-
+13
+-----------------------------------------------------------------------------------------------------
+3.OCTAL NUMBER
+------------
+TASK 3:- Convert the octal number 0o234 into its decimal and binary representations using Python.
+
+octal_number = 0o234
+print(int(octal_number))
+print(bin(octal_number))
+
+output:-
+156
+0b10011100
+----------------------------------------------------------------------------------------------------
+4.HEXADECIMAL NUMBER
+------------------
+TASK 4:- Convert the  to its decimal and binary representations in Python.
+
+hexadecimal_number = 0x1A3
+print(int(hexadecimal_number))
+print(bin(hexadecimal_number))
+
+output:-
+419
+0b110100011
+---------------------------------------------------------------------------------------------------
+5.ARITHMETIC WITH BINARY NUMBER
+-----------------------------
+TASK 5:- Add two binary numbers 0b1010 and 0b1101 and display the result in binary format
+bin_num1 = 0b1010
+bin_num2 = 0b1101
+sum_bin = bin_num1 + bin_num2
+print(bin(sum_bin))
+
+output:-
+0b10111
+----------------------------------------------------------------------------------------------------
+6.ARITHMETIC WITH OCTAL NUMBER
+----------------------------
+TASK 6:- Subtract two octal numbers 0o100 and 0o50 and display the result in octal format using Python.
+
+oct1 = 0o100
+oct2 = 0o50
+octal_number = oct1+oct2
+print(oct(octal_number))
+
+output:-
+0o150
+-----------------------------------------------------------------------------------------------------
+7.DECIMAL TO BINARY CONVERSION
+----------------------------
+TASK 7:- Convert the decimal number 255 into binary format using Python.
+
+decimal_number = 255
+print(bin(decimal_number))
+
+output:-
+0b11111111
+----------------------------------------------------------------------------------------------------
+8.BINARY TO HEXADECIMAL CONVERSION
+--------------------------------
+TASK 8:- Convert the binary number 0b111101 to its hexadecimal representation in Python.
+
+binary_number = 0b111101
+print(hex(binary_number))
+
+output:-
+0x3d
+---------------------------------------------------------------------------------------------------
+9.HEXADECIMAL TO OCTAL CONVERSION
+-------------------------------
+TASK 9:- Convert the hexadecimal number 0x7F to its octal equivalent using Python.
+
+hexadecimal_number = 0x7F
+print(oct(hexadecimal_number))
+
+output:-
+0o177
+---------------------------------------------------------------------------------------------------
+10.ADDITION WIT HEXADECIMAL NUMBER
+--------------------------------
+#Q10: Add two hexadecimal numbers 0x2A and 0x1F and display the result in hexadecimal format.
+hex1 = 0x2A 
+hex2 = 0x1F
+sum_hex = hex1 + hex2
+print(hex(sum_hex))
+
+output:-
+0x49
